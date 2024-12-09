@@ -9,4 +9,15 @@ public class LoginStepDefs extends AbstractStepDefs {
     public void theErrorMessageMessageIsShown(String errorMessage) {
         assertEquals(errorMessage, homePage.getErrorMessage());
     }
+
+
+
+    @Then("the user should be redirected to the invetory URL")/// UN
+    public void theUserShouldBeRedirectedToTheInvetoryURL() {
+        String actualUrl = driver.getCurrentUrl();
+        String expectedUrl = "https://www.saucedemo.com/inventory.html";
+        assertEquals(expectedUrl, actualUrl);
+
+
+    }
 }

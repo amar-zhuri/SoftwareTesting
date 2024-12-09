@@ -2,7 +2,10 @@ package hu.unideb.inf;
 
 import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
+
 
 public class CommonStepDefs extends AbstractStepDefs {
 
@@ -19,6 +22,11 @@ public class CommonStepDefs extends AbstractStepDefs {
     @When("the {string} button is clicked")
     public void theButtonIsClicked(String button) {
         homePage.clickButton(button);
+    }
+
+    @When("the 'Filter' dropdown is selected with {string}")//Un e kom shty
+    public void theFilterDropdownIsSelectedWith(String filterOption) {
+        homePage.selectFilterOption(filterOption);
     }
 
     @AfterAll

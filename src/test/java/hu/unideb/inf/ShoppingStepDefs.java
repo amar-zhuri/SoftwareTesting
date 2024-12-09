@@ -16,4 +16,10 @@ public class ShoppingStepDefs extends AbstractStepDefs {
     public void thePriceShouldRead(String total) {
         assertEquals(total, homePage.getTotal());
     }
+
+    @Then("the cart should display {string} items")
+    public void theCartShouldDisplayItems(String expectedCount) {
+        String cartItemCount = homePage.getCartItemCount();
+        assertEquals(expectedCount, cartItemCount);
+    }
 }
