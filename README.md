@@ -13,12 +13,15 @@ This project implements automated testing for a selected website using **Gherkin
 - **Selenium WebDriver**  
 - **Cucumber**  
 
+ 
 ## Project Structure  
-automated-testing/ ├── src/test/java/ # Step definitions and test runners
-├── src/test/resources/ # Gherkin feature files
-├── PageObjects/ # Encapsulates web elements and actions
-├── TestReports/ # Generated test execution reports
-├── drivers/ # ChromeDriver and other WebDriver executables
+
+automated-testing/  
+├── src/test/java/         # Step definitions and test runners  
+├── src/test/resources/    # Gherkin feature files  
+├── PageObjects/           # Encapsulates web elements and actions  
+├── TestReports/           # Generated test execution reports  
+├── drivers/               # ChromeDriver and other WebDriver executables  
 
 
 ## Installation and Setup  
