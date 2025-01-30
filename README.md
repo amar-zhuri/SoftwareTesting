@@ -32,3 +32,13 @@ automated-testing/
    cd automated-testing  
 mvn install  
 mvn test  
+
+
+## Test Case Examples  
+
+### **Feature: Login Testing**  
+#### **Scenario**: Valid user login  
+#### **Scenario Outline**: Multiple user login attempts with varying credentials  
+
+### **Feature: Navigation**  
+#### **Scenario**: Check navigation through primary menu options  
